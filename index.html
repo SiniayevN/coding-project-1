@@ -7,6 +7,28 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+    <h1>Feedback Form</h1>
+    <form id="feedbackForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Jane Doe" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="jane@example.com" required>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" placeholder="Your comments..." rows="4" required></textarea>
+
+      <p id="charCount">0 characters</p>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="submittedFeedback">
+      <h2>Submitted Feedback</h2>
+      <div id="feedbackList"></div>
+    </div>
+  </div>
     <script src="cp_1.js"></script>
 </body>
 </html>
