@@ -70,3 +70,21 @@ form.addEventListener("submit", (e) => {
   form.reset();
   charCount.textContent = "0 characters";
 });
+
+form.addEventListener("input", (e) => {
+  if (e.target.matches("#name, #email, #comments")) {
+    console.log("Input changed in:", e.target.id);
+  }
+});
+
+form.addEventListener("mouseover", (e) => {
+  if (e.target.matches("#name, #email, #comments")) {
+    console.log("Mouse over:", e.target.id);
+  }
+});
+
+form.addEventListener("mouseout", (e) => {
+  if (e.target.matches("#name, #email, #comments")) {
+    console.log("Mouse out:", e.target.id);
+  }
+});
