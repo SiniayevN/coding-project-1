@@ -88,3 +88,11 @@ form.addEventListener("mouseout", (e) => {
     console.log("Mouse out:", e.target.id);
   }
 });
+
+document.body.addEventListener("click", (e) => {
+  console.log("Background clicked");
+});
+
+form.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
